@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock Test</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        p, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ctn {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        .ctn div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        button {
+            width: 100px;
+        }
+    </style>
+    <script src='./script.js' defer></script>
+</head>
+<body>
+    
+    <div class="ctn">
+        <h3>Lockfile test</h3>
+        <p>Server one click count: <span id="count-one">0</span></p>
+        <p>Server two click count: <span id="count-two">0</span></p>
+
+        <div>
+            <p>Is there a lockfile? <span id="lock-display"></span></p>
+            <button id="lock">Lock</button>
+            <button id="unlock">Unlock</button>
+        </div>
+
+        <div>
+            <label for="btn-one">Increment server one count</label>
+            <button id="btn-one">++</button>
+        </div>
+
+        <div>
+            <label for="btn-two">Increment server two count</label>
+            <button id="btn-two">++</button>
+        </div>
+    </div>
+</body>
+</html>

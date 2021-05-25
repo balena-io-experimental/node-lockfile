@@ -1,0 +1,22 @@
+{
+  "name": "lock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "keywords": [],
+  "author": "Christina Wang",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lockfile": "^1.0.4",
+    "node-fetch": "^2.6.1"
+  }
+}

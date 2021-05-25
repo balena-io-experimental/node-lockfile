@@ -8,7 +8,7 @@
     "start": "node two.js"
   },
   "engines": {
-    "node": ">= 14.0.0"
+    "node": "*"
   },
   "keywords": [],
   "author": "Christina Wang",

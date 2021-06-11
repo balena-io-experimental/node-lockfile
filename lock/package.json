@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "*"
+    "node": ">=12.18"
   },
   "keywords": [],
   "author": "Christina Wang",

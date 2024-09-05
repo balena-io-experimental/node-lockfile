@@ -1,17 +1,19 @@
 version: '2.1'
 services:
-    one:
-        build: ./one
-        ports:
-            - '3000:3000'
-    two:
-        build: ./two
-        ports:
-            - '3001:3001'
-    lock:
-        build: ./lock
-        depends_on:
-            - one
-            - two
-        ports:
-            - '80:80'
+  one:
+    build: ./one
+    ports:
+      - '3000:3000'
+  two:
+    build: ./two
+    ports:
+      - '3001:3001'
+  lock:
+    build: ./lock
+    depends_on:
+      - one
+      - two
+    ports:
+      - '80:80'
+    labels:
+      io.balena.features.supervisor-api: '1'
